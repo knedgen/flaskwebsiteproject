@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+   <title>Projects</title>
+</head>
+<body>
+
+
+  <div class="jumbotron">
+
+
+    <h1>{{ title}}</h1>
+    <p><img class="projbox" src="static/media/{{id}}.png" ></p>
+    <p>{{ description}}</p>
+    <p><a href="{{ link }} " target="_blank">Github link</a></p>
+    {% if current_user.is_authenticated %}
+    <div style="text-align: center;">
+    <a href="{{url_for('projects.update',project_id=id)}}" >Update</a>
+    <button type="button" class="btn btn-danger" data-toggle='modal' data-target="#delete_modal">Delete</button>
+    </div>
+    {% endif %}
+  </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="delete_modal" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Delete Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to delete this project?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <form  action="{{url_for('projects.delete_post',project_id=id)}}" method="post">
+            <input class="btn btn-danger" type="submit" value="Delete">
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+
+{% endblock %}

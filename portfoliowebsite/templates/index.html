@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+   <title>Home</title>
+</head>
+<body>
+
+    <h1>Welcome<h1><br>
+    <p>This is my first website using Flask. The purpose is to showcase some of the python projects I've worked on.<p>
+
+    <p>If you would like to check out my projects click <a href="{{url_for('core.projects')}}">here</a> or the Projects tab at the top.</p>
+
+    <p>Check out my github <a href="https://github.com/knedgen" target="_blank">here</a> and
+    the Udemy courses I've completed <a href="{{url_for('core.udemy')}}">here</a></p>
+
+
+
+</body>
+
+
+{% endblock %}
