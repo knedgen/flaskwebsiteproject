@@ -72,3 +72,6 @@ p{font-family: 'Comic Sans MS', sans-serif; font-size: large; text-align: center
 .ol{list-style-type: none; margin: 0px; padding: 0px;
         background-color : rgba(1,137,220,0.75);
         float: inline-start;}
+.picleft{float: left; width: 200px; height: 200px; margin-left: 3%; display:inline-block;}
+.picright{float: right; width: 200px; height: 200px; margin-right: 3%; display:inline-block;}
+.figleft{text-align: center; width: 190px; margin-left: 3%;}
