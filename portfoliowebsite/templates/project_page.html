@@ -11,7 +11,7 @@
 
 
     <h1>{{ title}}</h1>
-    <p><img class="projbox" src="static/media/{{id}}.png" ></p>
+    <img class="projbox" src="static/media/{{id}}.png" height="250px" width="400px">
     <p>{{ description}}</p>
     <p><a href="{{ link }} " target="_blank">Github link</a></p>
     {% if current_user.is_authenticated %}
