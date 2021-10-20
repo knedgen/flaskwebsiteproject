@@ -14,11 +14,16 @@
     <img class="projbox" src="static/media/{{id}}.png" height="250px" width="400px">
     <p>{{ description}}</p>
     <p><a href="{{ link }} " target="_blank">Github link</a></p>
+    {% if demo %}
+    <p><a href="{{ demo }} " target="_blank">Try it out!</a></p>
+    {% endif %}
     {% if current_user.is_authenticated %}
     <div style="text-align: center;">
     <a href="{{url_for('projects.update',project_id=id)}}" >Update</a>
+
     <button type="button" class="btn btn-danger" data-toggle='modal' data-target="#delete_modal">Delete</button>
     </div>
+
     {% endif %}
   </div>
 

@@ -35,6 +35,7 @@ class ProjectPost(db.Model):
     title = db.Column(db.String,nullable=False)
     description = db.Column(db.Text,nullable=False)
     link = db.Column(db.Text,nullable=True)
+    demo = db.Column(db.Text,nullable=True)
 
     def __init__(self,title,description,link):
         self.title = title

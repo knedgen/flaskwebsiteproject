@@ -18,7 +18,8 @@ def add_project():
 
             project_post = ProjectPost(title=form.title.data,
                                     description= form.description.data,
-                                    link = form.link.data)
+                                    link = form.link.data,
+                                    demo = form.link.data)
 
             db.session.add(project_post)
             db.session.commit()
@@ -45,6 +46,7 @@ def update(project_id):
             project_post.title = form.title.data
             project_post.description= form.description.data
             project_post.link = form.link.data
+            project_post.demo = form.demo.data
             db.session.commit()
             return redirect(url_for('core.projects', project_id=project_post.id))
 
@@ -53,6 +55,7 @@ def update(project_id):
         form.title.data = project_post.title
         form.description.data = project_post.description
         form.link.data = project_post.link
+        form.demo.data = project_post.demo
 
     return render_template('add_project.html',form=form)
 
@@ -63,7 +66,8 @@ def project_page(project_id):
     return render_template('project_page.html',title=project_page.title,
                             description=project_page.description,
                             link=project_page.link, id = project_page.id,
-                            post = project_page)
+                            post = project_page,
+                            demo = project_page.demo)
 
 #delete a project
 @projects.route('/<int:project_id>/deleteproject',methods=['GET','POST'])
@@ -75,3 +79,7 @@ def delete_post(project_id):
     db.session.delete(project_post)
     db.session.commit()
     return redirect(url_for('core.projects'))
+
+@projects.route('/pongproject',methods=['GET','POST'])
+def pongproject():
+    return render_template('pong.html')

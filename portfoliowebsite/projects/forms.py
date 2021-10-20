@@ -7,4 +7,5 @@ class ProjectPostForm(FlaskForm):
     title = StringField('Title',validators=[DataRequired()])
     description = TextAreaField('Description',validators=[DataRequired()])
     link = StringField('Link',validators=[DataRequired()])
+    demo = StringField('Demo')
     submit = SubmitField("Add Project")
