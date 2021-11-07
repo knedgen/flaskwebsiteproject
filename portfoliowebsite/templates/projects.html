@@ -16,9 +16,10 @@
         <div class="card">
           <div class="card-body">
           <h1 class="urlbox2">{{project.title}}</h1>
+          <a class="urlbox2" href="static/media/{{project.id}}.png" target="_blank"><img src="static/media/{{project.id}}.png" width="500px" height="300px"></a>
+          <p class="urlbox2">{{project.description}}</p>
           <h2><a class="urlbox2" href="{{ url_for('projects.project_page',project_id=project.id)}}">Project Page</a></h2>
           {% if project.link %}
-          <h2><a class="urlbox2" href="{{project.link}}" target="_blank">Github Link</a></h2>
           </div>
         </div>
         {% endif %}
