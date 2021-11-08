@@ -21,7 +21,7 @@ font-family:"Gill Sans",sans-serif;}
 li a:hover{background-color: rgba(0,9,255,1)}
 li:last-child{border-right: none;}
 a:hover{background-color: rgba(0,9,255,1)}
-p{font-family: 'Comic Sans MS', sans-serif; font-size: large; text-align: center; margin-left:300px;margin-right:300px;}
+p{font-family: 'Helvetica', sans-serif; font-size: large; text-align: center; margin-left:300px;margin-right:300px;}
 .urlbox{display: block; padding: 8px; width: 275px; margin: 10px;
     background-color: rgba(1,137,220,0.75); color: white;
     text-decoration:none; border:solid;
