@@ -1,0 +1,9 @@
+sqlalchemy
+alembic
+Flask-wtf
+Flask-sqlalchemy
+Flask-login
+Flask-migrate
+wtforms
+werkzeug
+Pillow
