@@ -1,3 +1,89 @@
+/* Mobile: */
+ @import url("https://fonts.googleapis.com");
+ @import url("https://fonts.gstatic.com");
+ h1{font-family: 'Otomanopee One', sans-serif; font-size: xxx-large; text-align: center; width: 50%;}
+ body{ border: 5px solid rgba(122,198,225,1);
+ margin:0px; padding:0px;}
+ ul{list-style-type: none; margin: 0px; padding: 0px;
+ background-color : rgba(1,137,220,0.75);
+ position: fixed; top: 0; width: 100%;right:1px;}
+ ol{list-style-type: none; margin: 0px; padding: 0px;
+     background-color : rgba(1,137,220,0.75);
+     float: inline-start;}
+ li{float:left;font-size:x-large;}
+ li a{display: block; padding: 8px;
+ background-color: rgba(1,137,220,0.75); color: white;
+ text-decoration:none; border:solid;
+ border-right-color: rgba(122,198,225,1);
+ border-left-color: rgba(122,198,225,1);
+ border-top-color: rgba(122,198,225,1);
+ border-bottom-color: rgba(122,198,225,1);
+ font-family:"Gill Sans",sans-serif;}
+ li a:hover{background-color: rgba(0,9,255,1)}
+ li:last-child{border-right: none;}
+ a:hover{background-color: rgba(0,9,255,1)}
+ p{font-family: 'Helvetica', sans-serif; font-size: large; text-align: center; margin-left:10%;margin-right:10%;}
+ .urlbox{display: block; padding: 8px; width: 275px; margin: 10px;
+     background-color: rgba(1,137,220,0.75); color: white;
+     text-decoration:none; border:solid;
+     border-right-color: rgba(122,198,225,1);
+     border-left-color: rgba(122,198,225,1);
+     border-top-color: rgba(122,198,225,1);
+     border-bottom-color: rgba(122,198,225,1);
+     font-family:"Gill Sans",sans-serif;
+     text-align: center;
+     }
+
+ .projbox{display: block; padding: 8px; margin-left: auto;
+     margin-right: auto; width: 25%;
+     background-color: rgba(1,137,220,0.75); color: white;
+     text-decoration:none; border:solid;
+     border-right-color: rgba(122,198,225,1);
+     border-left-color: rgba(122,198,225,1);
+     border-top-color: rgba(122,198,225,1);
+     border-bottom-color: rgba(122,198,225,1);
+     font-family:'Otomanopee One', sans-serif;
+     text-align: center;}
+ .center {display: block;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+         }
+
+ .projbox2{display: block; padding: 2px; width: 500px; height: 500px; margin: 2px;
+         background-color: rgba(1,137,220,0.75); color: white;
+         text-decoration:none; border:solid;
+         border-right-color: rgba(122,198,225,1);
+         border-left-color: rgba(122,198,225,1);
+         border-top-color: rgba(122,198,225,1);
+         border-bottom-color: rgba(122,198,225,1);
+         font-family:'Otomanopee One', sans-serif;
+         text-align: center;
+         }
+ .urlbox2{display: block; padding: 2px; width: auto; height: auto; margin: 2px;
+     margin-left: 30%; margin-right: 30%;
+     background-color: rgba(1,137,220,0.75); color: white;
+     text-decoration:none; border:solid;
+     border-right-color: rgba(122,198,225,1);
+     border-left-color: rgba(122,198,225,1);
+     border-top-color: rgba(122,198,225,1);
+     border-bottom-color: rgba(122,198,225,1);
+     font-family:"Gill Sans",sans-serif;
+     text-align: center;
+     }
+ .ol{list-style-type: none; margin: 0px; padding: 0px;
+         background-color : rgba(1,137,220,0.75);
+         float: inline-start;}
+ .picleft{float: left; width: 200px; height: 200px; margin-left: 3%; display:inline-block;}
+ .picright{float: right; width: 200px; height: 200px; margin-right: 3%; display:inline-block;}
+ .figleft{text-align: center; width: 190px; margin-left: 3%;}
+ .figright{text-align: center; width: 190px; margin-right: 3%;}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For Desktop: */
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.gstatic.com");
 h1{font-family: 'Otomanopee One', sans-serif; font-size: xxx-large; text-align: center;}
@@ -77,3 +163,4 @@ p{font-family: 'Helvetica', sans-serif; font-size: large; text-align: center; ma
 .picright{float: right; width: 200px; height: 200px; margin-right: 3%; display:inline-block;}
 .figleft{text-align: center; width: 190px; margin-left: 3%;}
 .figright{text-align: center; width: 190px; margin-right: 3%;}
+}
